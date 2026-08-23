@@ -1,0 +1,50 @@
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.classpath
+*.project
+.classpath
+.project
+.settings/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.env.local
+.env.*.local
+
+# Environment
+.env
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
