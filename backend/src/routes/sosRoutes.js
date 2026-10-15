@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const { authenticate } = require('../middleware/auth');
+const { requireAdmin } = require('../middleware/auth');
+const { triggerSOS, getMySOSHistory, resolveSOS, updateDispatchSOS } = require('../controllers/sosController');
+router.use(authenticate);
+router.post('/', triggerSOS);
+router.get('/', getMySOSHistory);
+router.put('/:id/resolve', resolveSOS);
+router.put('/:id/dispatch', requireAdmin, updateDispatchSOS);
+module.exports = router;
